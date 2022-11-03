@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SolicitudPage
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class SolicitudPage
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cboequipo = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.textcantidad = New System.Windows.Forms.TextBox()
+        Me.textsalon = New System.Windows.Forms.TextBox()
+        Me.textdia = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -44,14 +44,14 @@ Partial Class SolicitudPage
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "SOLICITUDES"
         '
-        'ComboBox1
+        'cboequipo
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Impresion de documento", "Proyector", "Marcadores", "Cable HDMI", "Cable VGA"})
-        Me.ComboBox1.Location = New System.Drawing.Point(30, 93)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(266, 23)
-        Me.ComboBox1.TabIndex = 20
+        Me.cboequipo.FormattingEnabled = True
+        Me.cboequipo.Items.AddRange(New Object() {"proyectores", "Impresion de documentos", "Marcadores", "Cable HDMI", "Cable VGA"})
+        Me.cboequipo.Location = New System.Drawing.Point(30, 93)
+        Me.cboequipo.Name = "cboequipo"
+        Me.cboequipo.Size = New System.Drawing.Size(266, 23)
+        Me.cboequipo.TabIndex = 20
         '
         'Label2
         '
@@ -63,26 +63,26 @@ Partial Class SolicitudPage
         Me.Label2.TabIndex = 27
         Me.Label2.Text = "Seleccione lo que desea solicitar"
         '
-        'TextBox1
+        'textcantidad
         '
-        Me.TextBox1.Location = New System.Drawing.Point(30, 167)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(664, 23)
-        Me.TextBox1.TabIndex = 28
+        Me.textcantidad.Location = New System.Drawing.Point(30, 167)
+        Me.textcantidad.Name = "textcantidad"
+        Me.textcantidad.Size = New System.Drawing.Size(664, 23)
+        Me.textcantidad.TabIndex = 28
         '
-        'TextBox2
+        'textsalon
         '
-        Me.TextBox2.Location = New System.Drawing.Point(30, 222)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(664, 23)
-        Me.TextBox2.TabIndex = 29
+        Me.textsalon.Location = New System.Drawing.Point(30, 222)
+        Me.textsalon.Name = "textsalon"
+        Me.textsalon.Size = New System.Drawing.Size(664, 23)
+        Me.textsalon.TabIndex = 29
         '
-        'TextBox3
+        'textdia
         '
-        Me.TextBox3.Location = New System.Drawing.Point(29, 283)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(664, 23)
-        Me.TextBox3.TabIndex = 30
+        Me.textdia.Location = New System.Drawing.Point(29, 283)
+        Me.textdia.Name = "textdia"
+        Me.textdia.Size = New System.Drawing.Size(664, 23)
+        Me.textdia.TabIndex = 30
         '
         'Button1
         '
@@ -135,11 +135,11 @@ Partial Class SolicitudPage
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.textdia)
+        Me.Controls.Add(Me.textsalon)
+        Me.Controls.Add(Me.textcantidad)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cboequipo)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "SolicitudPage"
@@ -150,11 +150,11 @@ Partial Class SolicitudPage
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cboequipo As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents textcantidad As TextBox
+    Friend WithEvents textsalon As TextBox
+    Friend WithEvents textdia As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
