@@ -1,23 +1,86 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj": {}
+    "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj": {
+=======
+    "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
-        "projectName": "ES_Desktop",
-        "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
-        "packagesPath": "C:\\Users\\jairs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\obj\\",
+        "projectUniqueName": "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+        "projectName": "ES_Database",
+        "projectPath": "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+        "packagesPath": "C:\\Users\\ledez\\.nuget\\packages\\",
+        "outputPath": "A:\\VS\\ES_Desktop\\ES_Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jairs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ledez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj": {
+>>>>>>> 9847243713fbb2c16e61fda3761e7d7d1fa32482
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
+        "projectName": "ES_Desktop",
+        "projectPath": "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
+        "packagesPath": "C:\\Users\\ledez\\.nuget\\packages\\",
+        "outputPath": "A:\\VS\\ES_Desktop\\ES_Desktop\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ledez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,13 +89,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
+<<<<<<< HEAD
             "projectReferences": {}
+=======
+            "projectReferences": {
+              "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
+                "projectPath": "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj"
+              }
+            }
+>>>>>>> 9847243713fbb2c16e61fda3761e7d7d1fa32482
           }
         },
         "warningProperties": {

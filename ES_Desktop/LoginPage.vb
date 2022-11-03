@@ -20,4 +20,8 @@ Public Class LoginPage
         Me.Hide()
         RecuperarPage.Show()
     End Sub
+
+    Private Sub txtpass_TextChanged(sender As Object, e As EventArgs) Handles txtpass.TextChanged
+
+    End Sub
 End Class
