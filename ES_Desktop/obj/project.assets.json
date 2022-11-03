@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "ES_Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ES_Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ES_Database.dll": {}
-        }
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "ES_Database/1.0.0": {
-      "type": "project",
-      "path": "../ES_Database/ES_Database.vbproj",
-      "msbuildProject": "../ES_Database/ES_Database.vbproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "ES_Database >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\jairs\\.nuget\\packages\\": {},
@@ -58,11 +39,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
-              "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
