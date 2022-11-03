@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\Proyecto Xamarin\Yaguro\YaguroAPI\bin\Debug\netcoreapp3.1\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\MySql.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 
