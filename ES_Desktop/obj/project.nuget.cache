@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "otqUVIvnWm67Zw+7au9iKIqUm1BFuNHczYoos+PH+SsfNczFSQGFm0tgUeYjzYl+SxnN0jEA88pbtyGGSCzYRw==",
+  "dgSpecHash": "GsgRL0L9CB8ltI0xSLyf9QOmEI6CrDoQuuYmjfmf8amrEHVPur/qWKjGs2DODI7EmF5DZM3VRZeq+8PY+K7TOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
+  "projectFilePath": "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
