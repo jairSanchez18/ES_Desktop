@@ -25,13 +25,6 @@ C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Deskto
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ES_Desktop.SolicitudPage.resources
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\ES_Database.dll
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\MySql.Data.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\Google.Protobuf.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\ZstdNet.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\ES_Database.pdb
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ES_Desktop.vbproj.CopyComplete
 A:\VS\ES_Desktop\ES_Desktop\bin\Debug\net6.0-windows\ES_Desktop.exe

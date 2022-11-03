@@ -2,19 +2,17 @@
 
 Public Class SolicitudPage
     Public cant As Integer
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboequipo.SelectedIndexChanged
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim id_profesor = LoginPage.id_profesor
+        Dim id_inventario As Integer
 
         If SolicitudesClass.ValidarSolicitud(textcantidad.Text, cboequipo.Text) = True Then
-
-            SolicitudesClass.InsertarSolicitud(id_profesor, cboequipo.Text, textcantidad.Text, textsalon.Text, textdia.Text)
+            id_inventario = SolicitudesClass.VerProducto(cboequipo.Text)
+            SolicitudesClass.InsertarSolicitud(id_profesor, id_inventario, cboequipo.Text, textcantidad.Text, textsalon.Text)
             MsgBox("La solicitud fue enviada correctamente")
         Else
-            MsgBox("la cantidad insuficiente en el inevntario")
+            MsgBox("la cantidad es insuficiente en el inventario")
         End If
 
     End Sub

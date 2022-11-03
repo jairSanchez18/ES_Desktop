@@ -2,15 +2,6 @@ C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Databa
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\ES_Database.dll
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\ES_Database.pdb
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\MySql.Data.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\Google.Protobuf.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\ZstdNet.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\BouncyCastle.Crypto.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\Ubiety.Dns.Core.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\K4os.Compression.LZ4.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\K4os.Hash.xxHash.dll
-C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.vbproj.AssemblyReference.cache
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.AssemblyInfoInputs.cache

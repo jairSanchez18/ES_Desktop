@@ -27,11 +27,11 @@ Partial Class SolicitudPage
         Me.Label2 = New System.Windows.Forms.Label()
         Me.textcantidad = New System.Windows.Forms.TextBox()
         Me.textsalon = New System.Windows.Forms.TextBox()
-        Me.textdia = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.textdia = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Label1
@@ -77,13 +77,6 @@ Partial Class SolicitudPage
         Me.textsalon.Size = New System.Drawing.Size(664, 23)
         Me.textsalon.TabIndex = 29
         '
-        'textdia
-        '
-        Me.textdia.Location = New System.Drawing.Point(29, 283)
-        Me.textdia.Name = "textdia"
-        Me.textdia.Size = New System.Drawing.Size(664, 23)
-        Me.textdia.TabIndex = 30
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Black
@@ -126,16 +119,25 @@ Partial Class SolicitudPage
         Me.Label5.TabIndex = 45
         Me.Label5.Text = "Dia de solicitud"
         '
+        'textdia
+        '
+        Me.textdia.Enabled = False
+        Me.textdia.Font = New System.Drawing.Font("Rockwell", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.textdia.Location = New System.Drawing.Point(30, 283)
+        Me.textdia.Name = "textdia"
+        Me.textdia.Size = New System.Drawing.Size(664, 22)
+        Me.textdia.TabIndex = 46
+        '
         'SolicitudPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(720, 412)
+        Me.Controls.Add(Me.textdia)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.textdia)
         Me.Controls.Add(Me.textsalon)
         Me.Controls.Add(Me.textcantidad)
         Me.Controls.Add(Me.Label2)
@@ -154,9 +156,9 @@ Partial Class SolicitudPage
     Friend WithEvents Label2 As Label
     Friend WithEvents textcantidad As TextBox
     Friend WithEvents textsalon As TextBox
-    Friend WithEvents textdia As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents textdia As DateTimePicker
 End Class

@@ -1,30 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "ES_Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ES_Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ES_Database.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ES_Database/1.0.0": {
+      "type": "project",
+      "path": "../ES_Database/ES_Database.vbproj",
+      "msbuildProject": "../ES_Database/ES_Database.vbproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "ES_Database >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\ledez\\.nuget\\packages\\": {},
+    "C:\\Users\\jairs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
+      "projectUniqueName": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
       "projectName": "ES_Desktop",
-      "projectPath": "A:\\VS\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
-      "packagesPath": "C:\\Users\\ledez\\.nuget\\packages\\",
-      "outputPath": "A:\\VS\\ES_Desktop\\ES_Desktop\\obj\\",
+      "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\ES_Desktop.vbproj",
+      "packagesPath": "C:\\Users\\jairs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ledez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jairs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,20 +52,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-<<<<<<< HEAD
-          "projectReferences": {}
-=======
           "projectReferences": {
-            "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
-              "projectPath": "A:\\VS\\ES_Desktop\\ES_Database\\ES_Database.vbproj"
+            "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
+              "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj"
             }
           }
->>>>>>> 9847243713fbb2c16e61fda3761e7d7d1fa32482
         }
       },
       "warningProperties": {
@@ -80,5 +96,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Desktop\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
