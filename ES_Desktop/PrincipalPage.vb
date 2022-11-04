@@ -45,8 +45,4 @@ Public Class PrincipalPage
         LoginPage.Show()
 
     End Sub
-
-    Private Sub nombre_Click(sender As Object, e As EventArgs) Handles nombre.Click
-
-    End Sub
 End Class
