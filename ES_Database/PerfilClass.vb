@@ -106,7 +106,7 @@ Public Class PerfilClass
     End Function
 
 
-    Public Shared Function ValidarContraseña(txtpass As String) As Boolean
+    Public Shared Function ValidarContraseña(txtpass As String, id_profesor As String) As Boolean
         Dim oConexion As New MySqlConnection
         Dim oDataAdapter As New MySqlDataAdapter
         Dim oDataSet As New DataSet
@@ -127,7 +127,7 @@ Public Class PerfilClass
             oConexion.ConnectionString = myConnectionString
 
             'SE REALIZA LA CONSULTA SQL'
-            sSql = "SELECT * FROM credenciales WHERE contrasena = '" & txtpass & "' "
+            sSql = "SELECT * FROM credenciales WHERE contrasena = '" & txtpass & "' and id_profesor = '" & id_profesor & "' "
 
             'NOS PERMITE ABRIR LA CONEXION'
             oConexion.Open()

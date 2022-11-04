@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {}
+    "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
+    "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+        "projectUniqueName": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
         "projectName": "ES_Database",
-        "projectPath": "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
-        "packagesPath": "C:\\Users\\Jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jorge\\source\\repos\\ES_Desktop\\ES_Database\\obj\\",
+        "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+        "packagesPath": "C:\\Users\\jairs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jairs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

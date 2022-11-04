@@ -33,30 +33,40 @@ Public Class PerfilPage
         Else
             PerfilClass.ActualizarDatos(idP, txtced.Text, txtnom.Text, txtape.Text, txtfacu.Text, txtdirec.Text, txttel.Text, txtcorreo.Text)
             MsgBox("Los datos fueron actualizados")
+
+
+            Dim usuario = LoginClass.DatosProfesor(id_profesor)
+            'ASIGNO EL NOMBRE DE USUARIO AL HEADER'
+            PrincipalPage.nombre.Text = usuario
+            'ASIGNO EL NOMBRE DE USUARIO A LA PANTALLA BIENVENIDA'
+            BienvenidoPage.bienvenidauser.Text = "Bienvenido " + usuario
         End If
 
     End Sub
 
     Private Sub UpdatePass_Click(sender As Object, e As EventArgs) Handles UpdatePass.Click
 
-        'Valido la contrasena actual del usuario'
-        If PerfilClass.ValidarContraseña(txtpass.Text) Then
+        If txtpass.Text = "" Then
+            MsgBox("El campo contraseña actual esta vacio")
+        ElseIf txtpassnew.Text = "" Then
+            MsgBox("El campo contraseña nueva esta vacio")
+        ElseIf txtpassnew2.Text = "" Then
+            MsgBox("El campo repetir contraseña nueva esta vacio")
         Else
-            MsgBox("La contraseña actual es incorrecta")
-        End If
+            If txtpassnew.Text = txtpassnew2.Text Then
+                If PerfilClass.ValidarContraseña(txtpass.Text, id_profesor) = True Then
+                    PerfilClass.ActualizarPass(id_profesor, txtpassnew2.Text)
+                    MsgBox("La contraseña fue modificada correctamente")
 
-        'TOMO EN CUENTA QUE EL CAMPO DE LA CONTRASENA ACTUAL NO ESTE VACIO'
-        If txtpass.Text = ("") Then
-            MsgBox("Debe introducir su contraseña actual para cambiarla")
+                    txtpass.Text = ""
+                    txtpassnew.Text = ""
+                    txtpassnew2.Text = ""
+                Else
+                    MsgBox("La contraseña actual es incorrecta")
+                End If
+            Else
+                MsgBox("Las contraseña nueva no coiniciden")
+            End If
         End If
-
-        'VALIDO QUE LAS CONTRASENA NUEVAS SEAN IGUALES'
-        If txtpassnew.Text = (txtpassnew2.Text) Then
-            'AQUI SE LLAMA  AL UPDATE Y SE LE ENVIA EL NUEVO DATO DESDE TXTPASSNEW2.TEXT'
-            PerfilClass.ActualizarPass(id_profesor, txtpassnew.Text)
-        Else
-            MsgBox("Las contraseñas nuevas no son iguales")
-        End If
-
     End Sub
 End Class

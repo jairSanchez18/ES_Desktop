@@ -235,6 +235,7 @@ Partial Class PrincipalPage
         Me.Controls.Add(Me.PanelPrincipal)
         Me.MaximizeBox = False
         Me.Name = "PrincipalPage"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PrincipalPage"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
