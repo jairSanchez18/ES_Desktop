@@ -31,7 +31,7 @@ Partial Class AsistenciaPage
         Me.AsistenciaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PorcentajeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ObservacionesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GuardarColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GuardarColumn = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.AsistenciaGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +50,7 @@ Partial Class AsistenciaPage
         'AsistenciaGrid
         '
         Me.AsistenciaGrid.AllowUserToDeleteRows = False
+        Me.AsistenciaGrid.AllowUserToOrderColumns = True
         Me.AsistenciaGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AsistenciaGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreColumn, Me.ApellidoColumn, Me.CorreoColumn, Me.CedulaColumn, Me.AsistenciaColumn, Me.PorcentajeColumn, Me.ObservacionesColumn, Me.GuardarColumn})
         Me.AsistenciaGrid.Location = New System.Drawing.Point(12, 143)
@@ -97,15 +98,19 @@ Partial Class AsistenciaPage
         '
         'ObservacionesColumn
         '
+        Me.ObservacionesColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.ObservacionesColumn.HeaderText = "Observaciones"
         Me.ObservacionesColumn.Name = "ObservacionesColumn"
         Me.ObservacionesColumn.ReadOnly = True
+        Me.ObservacionesColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
         'GuardarColumn
         '
         Me.GuardarColumn.HeaderText = "Guardar"
         Me.GuardarColumn.Name = "GuardarColumn"
         Me.GuardarColumn.ReadOnly = True
+        Me.GuardarColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GuardarColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Label2
         '
@@ -121,7 +126,6 @@ Partial Class AsistenciaPage
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Rockwell", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"22/10/2022", "22/11/2022"})
         Me.ComboBox1.Location = New System.Drawing.Point(12, 107)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(212, 22)
@@ -148,6 +152,8 @@ Partial Class AsistenciaPage
 
     Friend WithEvents Label1 As Label
     Friend WithEvents AsistenciaGrid As DataGridView
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents NombreColumn As DataGridViewTextBoxColumn
     Friend WithEvents ApellidoColumn As DataGridViewTextBoxColumn
     Friend WithEvents CorreoColumn As DataGridViewTextBoxColumn
@@ -155,7 +161,5 @@ Partial Class AsistenciaPage
     Friend WithEvents AsistenciaColumn As DataGridViewTextBoxColumn
     Friend WithEvents PorcentajeColumn As DataGridViewTextBoxColumn
     Friend WithEvents ObservacionesColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GuardarColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents GuardarColumn As DataGridViewButtonColumn
 End Class
