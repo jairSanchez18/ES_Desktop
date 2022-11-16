@@ -23,8 +23,7 @@ Partial Class HorarioPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Horariodgv = New System.Windows.Forms.DataGridView()
         Me.HoraColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LunesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MartesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -32,7 +31,7 @@ Partial Class HorarioPage
         Me.JuevesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ViernesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SabadoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Horariodgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,28 +44,19 @@ Partial Class HorarioPage
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "HORARIO DE CLASES"
         '
-        'Label2
+        'Horariodgv
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(28, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(167, 23)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "SALON: #SALON"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.HoraColumn, Me.LunesColumn, Me.MartesColumn, Me.MiercolesColumn, Me.JuevesColumn, Me.ViernesColumn, Me.SabadoColumn})
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 115)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(680, 270)
-        Me.DataGridView1.TabIndex = 24
+        Me.Horariodgv.AllowUserToAddRows = False
+        Me.Horariodgv.AllowUserToDeleteRows = False
+        Me.Horariodgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Horariodgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.HoraColumn, Me.LunesColumn, Me.MartesColumn, Me.MiercolesColumn, Me.JuevesColumn, Me.ViernesColumn, Me.SabadoColumn})
+        Me.Horariodgv.Location = New System.Drawing.Point(17, 92)
+        Me.Horariodgv.Name = "Horariodgv"
+        Me.Horariodgv.ReadOnly = True
+        Me.Horariodgv.RowHeadersVisible = False
+        Me.Horariodgv.RowTemplate.Height = 25
+        Me.Horariodgv.Size = New System.Drawing.Size(680, 294)
+        Me.Horariodgv.TabIndex = 24
         '
         'HoraColumn
         '
@@ -116,21 +106,19 @@ Partial Class HorarioPage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(720, 412)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Horariodgv)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "HorarioPage"
         Me.Text = "HorarioPage"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Horariodgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Horariodgv As DataGridView
     Friend WithEvents HoraColumn As DataGridViewTextBoxColumn
     Friend WithEvents LunesColumn As DataGridViewTextBoxColumn
     Friend WithEvents MartesColumn As DataGridViewTextBoxColumn

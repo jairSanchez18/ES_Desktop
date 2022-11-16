@@ -29,7 +29,9 @@ Public Class PrincipalPage
     End Sub
 
     Private Sub asistenciabutton_Click(sender As Object, e As EventArgs) Handles asistenciabutton.Click
-        UnirPantallas(AsistenciaPage)
+        AsistenciaPage.Close()
+
+        UnirPantallas(OpcionesPage)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -41,7 +43,14 @@ Public Class PrincipalPage
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Hide()
+        Me.Close()
+        AsistenciaPage.Close()
+        BienvenidoPage.Close()
+        HorarioPage.Close()
+        OpcionesPage.Close()
+        PerfilPage.Close()
+        SolicitudPage.Close()
+
         LoginPage.Show()
 
     End Sub

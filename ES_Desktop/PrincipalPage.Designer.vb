@@ -236,7 +236,7 @@ Partial Class PrincipalPage
         Me.MaximizeBox = False
         Me.Name = "PrincipalPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PrincipalPage"
+        Me.Text = "Sistema de asistencia UTP"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

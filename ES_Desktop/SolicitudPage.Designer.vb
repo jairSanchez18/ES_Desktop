@@ -26,12 +26,12 @@ Partial Class SolicitudPage
         Me.cboequipo = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.textcantidad = New System.Windows.Forms.TextBox()
-        Me.textsalon = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.textdia = New System.Windows.Forms.DateTimePicker()
+        Me.cbosalon = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,8 +46,8 @@ Partial Class SolicitudPage
         '
         'cboequipo
         '
+        Me.cboequipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboequipo.FormattingEnabled = True
-        Me.cboequipo.Items.AddRange(New Object() {"proyectores", "Impresion de documentos", "Marcadores", "Cable HDMI", "Cable VGA"})
         Me.cboequipo.Location = New System.Drawing.Point(30, 93)
         Me.cboequipo.Name = "cboequipo"
         Me.cboequipo.Size = New System.Drawing.Size(266, 23)
@@ -69,13 +69,6 @@ Partial Class SolicitudPage
         Me.textcantidad.Name = "textcantidad"
         Me.textcantidad.Size = New System.Drawing.Size(664, 23)
         Me.textcantidad.TabIndex = 28
-        '
-        'textsalon
-        '
-        Me.textsalon.Location = New System.Drawing.Point(30, 222)
-        Me.textsalon.Name = "textsalon"
-        Me.textsalon.Size = New System.Drawing.Size(664, 23)
-        Me.textsalon.TabIndex = 29
         '
         'Button1
         '
@@ -128,17 +121,26 @@ Partial Class SolicitudPage
         Me.textdia.Size = New System.Drawing.Size(664, 22)
         Me.textdia.TabIndex = 46
         '
+        'cbosalon
+        '
+        Me.cbosalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbosalon.FormattingEnabled = True
+        Me.cbosalon.Location = New System.Drawing.Point(30, 220)
+        Me.cbosalon.Name = "cbosalon"
+        Me.cbosalon.Size = New System.Drawing.Size(663, 23)
+        Me.cbosalon.TabIndex = 47
+        '
         'SolicitudPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(720, 412)
+        Me.Controls.Add(Me.cbosalon)
         Me.Controls.Add(Me.textdia)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.textsalon)
         Me.Controls.Add(Me.textcantidad)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cboequipo)
@@ -155,10 +157,10 @@ Partial Class SolicitudPage
     Friend WithEvents cboequipo As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents textcantidad As TextBox
-    Friend WithEvents textsalon As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents textdia As DateTimePicker
+    Friend WithEvents cbosalon As ComboBox
 End Class

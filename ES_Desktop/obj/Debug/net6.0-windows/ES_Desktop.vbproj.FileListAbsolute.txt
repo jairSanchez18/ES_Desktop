@@ -92,3 +92,4 @@ C:\Users\Jorge\source\repos\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\refin
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ES_Desktop.pdb
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ES_Desktop.genruntimeconfig.cache
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ref\ES_Desktop.dll
+C:\Users\jairs\OneDrive\Documentos\Proyecto Final de DSVIII\ES_Desktop\ES_Desktop\obj\Debug\net6.0-windows\ES_Desktop.OpcionesPage.resources

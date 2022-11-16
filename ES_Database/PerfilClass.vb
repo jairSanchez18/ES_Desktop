@@ -18,12 +18,12 @@ Public Class PerfilClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 
             'SE REALIZA LA CONSULTA SQL'
-            sSql = "select * from profesor P join credenciales C on P.id=C.id"
+            sSql = "SELECT * FROM profesor AS P JOIN credenciales AS C on P.id= C.id_profesor WHERE P.id ='" & id & "'"
 
             'NOS PERMITE ABRIR LA CONEXION'
             oConexion.Open()
@@ -80,7 +80,7 @@ Public Class PerfilClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 
@@ -122,7 +122,7 @@ Public Class PerfilClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 
@@ -169,7 +169,7 @@ Public Class PerfilClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 

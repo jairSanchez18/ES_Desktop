@@ -3,11 +3,11 @@
 Public Class PerfilPage
     'RECIBO EL ID DE LA PAGINA DE LOGIN'
     Dim id_profesor = LoginPage.id_profesor
-    'RECIBO UNA LISTA CON TODOS LOS DATOS DEL USUARIO'
-    Dim ListaData = PerfilClass.DatosUserPerfil(id_profesor)
-    Dim idP As Integer = ListaData(0)
 
     Private Sub PerfilPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'RECIBO UNA LISTA CON TODOS LOS DATOS DEL USUARIO'
+        Dim ListaData = PerfilClass.DatosUserPerfil(id_profesor)
+
         'USO LA LISTA PARA ASIGAR LOS DATOS A LOS TXT'
         txtced.Text = ListaData(1)
         txtnom.Text = ListaData(2)
@@ -31,7 +31,7 @@ Public Class PerfilPage
         ElseIf txttel.Text = "" Then
             MsgBox("El campo telefono esta vacio")
         Else
-            PerfilClass.ActualizarDatos(idP, txtced.Text, txtnom.Text, txtape.Text, txtfacu.Text, txtdirec.Text, txttel.Text, txtcorreo.Text)
+            PerfilClass.ActualizarDatos(id_profesor, txtced.Text, txtnom.Text, txtape.Text, txtfacu.Text, txtdirec.Text, txttel.Text, txtcorreo.Text)
             MsgBox("Los datos fueron actualizados")
 
 
