@@ -23,7 +23,7 @@ Partial Class AsistenciaPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.AsistenciaGrid = New System.Windows.Forms.DataGridView()
+        Me.Asistenciadgv = New System.Windows.Forms.DataGridView()
         Me.NombreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ApellidoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CorreoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -32,9 +32,8 @@ Partial Class AsistenciaPage
         Me.PorcentajeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ObservacionesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GuardarColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        CType(Me.AsistenciaGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.salon = New System.Windows.Forms.Label()
+        CType(Me.Asistenciadgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,17 +46,19 @@ Partial Class AsistenciaPage
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "LISTA DE ASISTENCIA"
         '
-        'AsistenciaGrid
+        'Asistenciadgv
         '
-        Me.AsistenciaGrid.AllowUserToDeleteRows = False
-        Me.AsistenciaGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.AsistenciaGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreColumn, Me.ApellidoColumn, Me.CorreoColumn, Me.CedulaColumn, Me.AsistenciaColumn, Me.PorcentajeColumn, Me.ObservacionesColumn, Me.GuardarColumn})
-        Me.AsistenciaGrid.Location = New System.Drawing.Point(12, 143)
-        Me.AsistenciaGrid.Name = "AsistenciaGrid"
-        Me.AsistenciaGrid.ReadOnly = True
-        Me.AsistenciaGrid.RowTemplate.Height = 25
-        Me.AsistenciaGrid.Size = New System.Drawing.Size(696, 235)
-        Me.AsistenciaGrid.TabIndex = 20
+        Me.Asistenciadgv.AllowUserToAddRows = False
+        Me.Asistenciadgv.AllowUserToDeleteRows = False
+        Me.Asistenciadgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Asistenciadgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreColumn, Me.ApellidoColumn, Me.CorreoColumn, Me.CedulaColumn, Me.AsistenciaColumn, Me.PorcentajeColumn, Me.ObservacionesColumn, Me.GuardarColumn})
+        Me.Asistenciadgv.Location = New System.Drawing.Point(12, 126)
+        Me.Asistenciadgv.Name = "Asistenciadgv"
+        Me.Asistenciadgv.ReadOnly = True
+        Me.Asistenciadgv.RowHeadersVisible = False
+        Me.Asistenciadgv.RowTemplate.Height = 25
+        Me.Asistenciadgv.Size = New System.Drawing.Size(696, 235)
+        Me.Asistenciadgv.TabIndex = 20
         '
         'NombreColumn
         '
@@ -107,25 +108,15 @@ Partial Class AsistenciaPage
         Me.GuardarColumn.Name = "GuardarColumn"
         Me.GuardarColumn.ReadOnly = True
         '
-        'Label2
+        'salon
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(12, 77)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(167, 23)
-        Me.Label2.TabIndex = 21
-        Me.Label2.Text = "SALON: #SALON"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Rockwell", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"22/10/2022", "22/11/2022"})
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 107)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(212, 22)
-        Me.ComboBox1.TabIndex = 22
+        Me.salon.AutoSize = True
+        Me.salon.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.salon.Location = New System.Drawing.Point(12, 83)
+        Me.salon.Name = "salon"
+        Me.salon.Size = New System.Drawing.Size(167, 23)
+        Me.salon.TabIndex = 21
+        Me.salon.Text = "SALON: #SALON"
         '
         'AsistenciaPage
         '
@@ -133,21 +124,20 @@ Partial Class AsistenciaPage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(720, 412)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.AsistenciaGrid)
+        Me.Controls.Add(Me.salon)
+        Me.Controls.Add(Me.Asistenciadgv)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AsistenciaPage"
         Me.Text = "Pagina de asistencias"
-        CType(Me.AsistenciaGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Asistenciadgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents AsistenciaGrid As DataGridView
+    Friend WithEvents Asistenciadgv As DataGridView
     Friend WithEvents NombreColumn As DataGridViewTextBoxColumn
     Friend WithEvents ApellidoColumn As DataGridViewTextBoxColumn
     Friend WithEvents CorreoColumn As DataGridViewTextBoxColumn
@@ -156,6 +146,6 @@ Partial Class AsistenciaPage
     Friend WithEvents PorcentajeColumn As DataGridViewTextBoxColumn
     Friend WithEvents ObservacionesColumn As DataGridViewTextBoxColumn
     Friend WithEvents GuardarColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Label2 As Label
+    Friend WithEvents salon As Label
     Friend WithEvents ComboBox1 As ComboBox
 End Class

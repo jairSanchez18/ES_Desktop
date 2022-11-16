@@ -21,7 +21,7 @@ Public Class LoginClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 
@@ -68,7 +68,7 @@ Public Class LoginClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 
@@ -108,7 +108,7 @@ Public Class LoginClass
             myConnectionString = "server=127.0.0.1;" _
             & "uid=root;" _
             & "pwd=;" _
-            & "database=proyecto_ds7"
+            & "database=asistenciautp"
 
             oConexion.ConnectionString = myConnectionString
 

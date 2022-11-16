@@ -189,7 +189,7 @@ Partial Class PerfilPage
         Me.txtcorreo.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtcorreo.Location = New System.Drawing.Point(350, 172)
         Me.txtcorreo.Name = "txtcorreo"
-        Me.txtcorreo.Size = New System.Drawing.Size(156, 26)
+        Me.txtcorreo.Size = New System.Drawing.Size(242, 26)
         Me.txtcorreo.TabIndex = 37
         '
         'UpdatePerfil
