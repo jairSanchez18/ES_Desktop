@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property asistio() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("asistio", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property descarga() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("descarga", resourceCulture)
@@ -83,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property falto() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("falto", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property imgUTP() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("imgUTP", resourceCulture)
@@ -96,6 +116,16 @@ Namespace My.Resources
         Friend ReadOnly Property logo_utp() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("logo utp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tardanza() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tardanza", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
