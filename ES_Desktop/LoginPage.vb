@@ -12,7 +12,7 @@ Public Class LoginPage
             id_profesor = LoginClass.VerID(txtcorreo.Text, txtpass.Text)
             PrincipalPage.Show()
         Else
-            MsgBox("El usuario y contraseña son incorrectos")
+            MsgBox("El usuario y contraseña son incorrectos", Nothing, "Error")
         End If
     End Sub
 

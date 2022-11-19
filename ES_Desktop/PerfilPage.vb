@@ -21,18 +21,18 @@ Public Class PerfilPage
     Private Sub UpdatePerfil_Click(sender As Object, e As EventArgs) Handles UpdatePerfil.Click
 
         If txtnom.Text = "" Then
-            MsgBox("El campo nombre esta vacio")
+            MsgBox("El campo nombre esta vacio", Nothing, "Error")
         ElseIf txtape.Text = "" Then
-            MsgBox("El campo apellido esta vacio")
+            MsgBox("El campo apellido esta vacio", Nothing, "Error")
         ElseIf txtfacu.Text = "" Then
-            MsgBox("El campo facultad esta vacio")
+            MsgBox("El campo facultad esta vacio", Nothing, "Error")
         ElseIf txtdirec.Text = "" Then
-            MsgBox("El campo direccion esta vacio")
+            MsgBox("El campo direccion esta vacio", Nothing, "Error")
         ElseIf txttel.Text = "" Then
-            MsgBox("El campo telefono esta vacio")
+            MsgBox("El campo telefono esta vacio", Nothing, "Error")
         Else
             PerfilClass.ActualizarDatos(id_profesor, txtced.Text, txtnom.Text, txtape.Text, txtfacu.Text, txtdirec.Text, txttel.Text, txtcorreo.Text)
-            MsgBox("Los datos fueron actualizados")
+            MsgBox("Los datos fueron actualizados", Nothing, "Actualizado")
 
 
             Dim usuario = LoginClass.DatosProfesor(id_profesor)
@@ -47,25 +47,25 @@ Public Class PerfilPage
     Private Sub UpdatePass_Click(sender As Object, e As EventArgs) Handles UpdatePass.Click
 
         If txtpass.Text = "" Then
-            MsgBox("El campo contraseña actual esta vacio")
+            MsgBox("El campo contraseña actual esta vacio", Nothing, "Error")
         ElseIf txtpassnew.Text = "" Then
-            MsgBox("El campo contraseña nueva esta vacio")
+            MsgBox("El campo contraseña nueva esta vacio", Nothing, "Error")
         ElseIf txtpassnew2.Text = "" Then
-            MsgBox("El campo repetir contraseña nueva esta vacio")
+            MsgBox("El campo repetir contraseña nueva esta vacio", Nothing, "Error")
         Else
             If txtpassnew.Text = txtpassnew2.Text Then
                 If PerfilClass.ValidarContraseña(txtpass.Text, id_profesor) = True Then
                     PerfilClass.ActualizarPass(id_profesor, txtpassnew2.Text)
-                    MsgBox("La contraseña fue modificada correctamente")
+                    MsgBox("La contraseña fue modificada correctamente", Nothing, "Correcto")
 
                     txtpass.Text = ""
                     txtpassnew.Text = ""
                     txtpassnew2.Text = ""
                 Else
-                    MsgBox("La contraseña actual es incorrecta")
+                    MsgBox("La contraseña actual es incorrecta", Nothing, "Verificar")
                 End If
             Else
-                MsgBox("Las contraseña nueva no coiniciden")
+                MsgBox("Las contraseña nueva no coiniciden", Nothing, "Verificar")
             End If
         End If
     End Sub

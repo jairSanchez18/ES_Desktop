@@ -10,17 +10,16 @@ Public Class SolicitudPage
         If cboequipo.Text = "" Or
                 textcantidad.Text = "" Or
                 cbosalon.Text = "" Then
-            MsgBox("ERROR: Debe llenar todos los campos")
+            MsgBox("ERROR: Debe llenar todos los campos", Nothing, "Error")
         Else
             If SolicitudesClass.ValidarSolicitud(textcantidad.Text, cboequipo.Text) = True Then
                 id_inventario = SolicitudesClass.VerProducto(cboequipo.Text)
                 SolicitudesClass.InsertarSolicitud(id_profesor, id_inventario, cboequipo.Text, textcantidad.Text, cbosalon.Text)
-                MsgBox("La solicitud fue enviada correctamente")
+                MsgBox("La solicitud fue enviada correctamente", Nothing, "Excelente")
             Else
-                MsgBox("la cantidad es insuficiente en el inventario")
+                MsgBox("la cantidad es insuficiente en el inventario", Nothing, "Verificar cantidad")
             End If
         End If
-
     End Sub
 
     Private Sub SolicitudPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load

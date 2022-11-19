@@ -22,17 +22,18 @@ Partial Class AsistenciaPage
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Asistenciadgv = New System.Windows.Forms.DataGridView()
+        Me.salon = New System.Windows.Forms.Label()
         Me.NombreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ApellidoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CorreoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CedulaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AsistenciaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PorcentajeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AsistenciaColumn = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ObservacionesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GuardarColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.salon = New System.Windows.Forms.Label()
+        Me.GuardarColumn = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.Asistenciadgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,20 +52,31 @@ Partial Class AsistenciaPage
         Me.Asistenciadgv.AllowUserToAddRows = False
         Me.Asistenciadgv.AllowUserToDeleteRows = False
         Me.Asistenciadgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Asistenciadgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreColumn, Me.ApellidoColumn, Me.CorreoColumn, Me.CedulaColumn, Me.AsistenciaColumn, Me.PorcentajeColumn, Me.ObservacionesColumn, Me.GuardarColumn})
+        Me.Asistenciadgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreColumn, Me.ApellidoColumn, Me.CorreoColumn, Me.CedulaColumn, Me.PorcentajeColumn, Me.AsistenciaColumn, Me.ObservacionesColumn, Me.GuardarColumn})
         Me.Asistenciadgv.Location = New System.Drawing.Point(12, 126)
         Me.Asistenciadgv.Name = "Asistenciadgv"
-        Me.Asistenciadgv.ReadOnly = True
         Me.Asistenciadgv.RowHeadersVisible = False
         Me.Asistenciadgv.RowTemplate.Height = 25
         Me.Asistenciadgv.Size = New System.Drawing.Size(696, 235)
         Me.Asistenciadgv.TabIndex = 20
         '
+        'salon
+        '
+        Me.salon.AutoSize = True
+        Me.salon.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.salon.Location = New System.Drawing.Point(12, 83)
+        Me.salon.Name = "salon"
+        Me.salon.Size = New System.Drawing.Size(167, 23)
+        Me.salon.TabIndex = 21
+        Me.salon.Text = "SALON: #SALON"
+        '
         'NombreColumn
         '
+        Me.NombreColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
         Me.NombreColumn.HeaderText = "Nombre"
         Me.NombreColumn.Name = "NombreColumn"
         Me.NombreColumn.ReadOnly = True
+        Me.NombreColumn.Width = 76
         '
         'ApellidoColumn
         '
@@ -84,39 +96,35 @@ Partial Class AsistenciaPage
         Me.CedulaColumn.Name = "CedulaColumn"
         Me.CedulaColumn.ReadOnly = True
         '
-        'AsistenciaColumn
-        '
-        Me.AsistenciaColumn.HeaderText = "Asistencia"
-        Me.AsistenciaColumn.Name = "AsistenciaColumn"
-        Me.AsistenciaColumn.ReadOnly = True
-        '
         'PorcentajeColumn
         '
         Me.PorcentajeColumn.HeaderText = "Porcentaje"
         Me.PorcentajeColumn.Name = "PorcentajeColumn"
         Me.PorcentajeColumn.ReadOnly = True
         '
+        'AsistenciaColumn
+        '
+        Me.AsistenciaColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        Me.AsistenciaColumn.HeaderText = "Asistencia"
+        Me.AsistenciaColumn.Name = "AsistenciaColumn"
+        Me.AsistenciaColumn.ReadOnly = True
+        Me.AsistenciaColumn.Width = 66
+        '
         'ObservacionesColumn
         '
+        DataGridViewCellStyle1.NullValue = "  "
+        Me.ObservacionesColumn.DefaultCellStyle = DataGridViewCellStyle1
         Me.ObservacionesColumn.HeaderText = "Observaciones"
         Me.ObservacionesColumn.Name = "ObservacionesColumn"
-        Me.ObservacionesColumn.ReadOnly = True
         '
         'GuardarColumn
         '
         Me.GuardarColumn.HeaderText = "Guardar"
         Me.GuardarColumn.Name = "GuardarColumn"
         Me.GuardarColumn.ReadOnly = True
-        '
-        'salon
-        '
-        Me.salon.AutoSize = True
-        Me.salon.Font = New System.Drawing.Font("Rockwell", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.salon.Location = New System.Drawing.Point(12, 83)
-        Me.salon.Name = "salon"
-        Me.salon.Size = New System.Drawing.Size(167, 23)
-        Me.salon.TabIndex = 21
-        Me.salon.Text = "SALON: #SALON"
+        Me.GuardarColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GuardarColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.GuardarColumn.Text = ""
         '
         'AsistenciaPage
         '
@@ -138,14 +146,14 @@ Partial Class AsistenciaPage
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Asistenciadgv As DataGridView
+    Friend WithEvents salon As Label
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents NombreColumn As DataGridViewTextBoxColumn
     Friend WithEvents ApellidoColumn As DataGridViewTextBoxColumn
     Friend WithEvents CorreoColumn As DataGridViewTextBoxColumn
     Friend WithEvents CedulaColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AsistenciaColumn As DataGridViewTextBoxColumn
     Friend WithEvents PorcentajeColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AsistenciaColumn As DataGridViewImageColumn
     Friend WithEvents ObservacionesColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GuardarColumn As DataGridViewTextBoxColumn
-    Friend WithEvents salon As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents GuardarColumn As DataGridViewButtonColumn
 End Class

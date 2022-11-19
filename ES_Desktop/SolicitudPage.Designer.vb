@@ -134,6 +134,7 @@ Partial Class SolicitudPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(720, 412)
         Me.Controls.Add(Me.cbosalon)
         Me.Controls.Add(Me.textdia)

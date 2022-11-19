@@ -121,7 +121,7 @@ Public Class AsistenciaClass
 
             'HACEMOS EL SELECT PARA OBTENER LA CANTIDAD DEL INVENTARIO'
 
-            sSql = "SELECT distinct date(create_at) as 'create_at' from lista_asist WHERE id_profesor = '" & id_profesor & "' and id_grupo = '" & id_grupo & "'"
+            sSql = "SELECT distinct date(create_at) as 'create_at' from lista_asist WHERE id_profesor = '" & id_profesor & "' and id_grupo = '" & id_grupo & "' ORDER BY date(create_at) DESC"
 
             'NOS PERMITE ABRIR LA CONEXION'
             oConexion.Open()
@@ -201,5 +201,47 @@ Public Class AsistenciaClass
         End Try
 
         Return asistencia
+    End Function
+
+    Public Shared Function GuardarObservaciones(observacion As String, id_asist As String) As String
+        Dim oConexion As New MySqlConnection
+        Dim oDataAdapter As New MySqlDataAdapter
+        Dim oDataSet As New DataSet
+
+        'CREACION DE CAMPOS PARA REALIZAR LAS CONSULTAS SQL'
+        Dim sSql As String
+        Dim myConnectionString As String
+
+
+        'TRY CATCH PARA VALIDAR CONEXION Y CONSULTAS'
+        Try
+            'SE REALIZA LA CONEXION CON LA BASE DE DATOS'
+            myConnectionString = "server=127.0.0.1;" _
+            & "uid=root;" _
+            & "pwd=;" _
+            & "database=asistenciautp"
+
+            oConexion.ConnectionString = myConnectionString
+
+            'HACEMOS EL SELECT PARA OBTENER LA CANTIDAD DEL INVENTARIO'
+
+            sSql = "UPDATE lista_asist SET observaciones='" & observacion & "' WHERE id ='" & id_asist & "'"
+
+            'NOS PERMITE ABRIR LA CONEXION'
+            oConexion.Open()
+
+            'NOS PERMITE REALIZAR LA CONSULTA CON LA CONEXION'
+            oDataAdapter = New MySqlDataAdapter(sSql, oConexion)
+
+            'LIMPIAMOS NUESTRO DATA SET EN CASO TENGA DATOS'
+            oDataSet.Clear()
+            oDataAdapter.Fill(oDataSet, "lista_asist")
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Return "Observaciones guardadas con exito"
     End Function
 End Class
