@@ -24,7 +24,7 @@ Partial Class RecuperarPage
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.correotxt = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -56,14 +56,14 @@ Partial Class RecuperarPage
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "Ingrese su correo electrónico"
         '
-        'TextBox1
+        'correotxt
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(163, 230)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "example@correo.com"
-        Me.TextBox1.Size = New System.Drawing.Size(480, 26)
-        Me.TextBox1.TabIndex = 13
+        Me.correotxt.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.correotxt.Location = New System.Drawing.Point(163, 230)
+        Me.correotxt.Name = "correotxt"
+        Me.correotxt.PlaceholderText = "example@correo.com"
+        Me.correotxt.Size = New System.Drawing.Size(480, 26)
+        Me.correotxt.TabIndex = 13
         '
         'PictureBox2
         '
@@ -126,7 +126,7 @@ Partial Class RecuperarPage
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.correotxt)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -142,7 +142,7 @@ Partial Class RecuperarPage
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents correotxt As TextBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
