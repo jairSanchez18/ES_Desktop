@@ -40,3 +40,17 @@ C:\Users\Jorge\source\repos\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Database\obj\Debug\net6.0\refint\ES_Database.dll
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.pdb
 C:\Users\Jorge\source\repos\ES_Desktop\ES_Database\obj\Debug\net6.0\ref\ES_Database.dll
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\bin\Debug\net6.0\ES_Database.deps.json
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\bin\Debug\net6.0\ES_Database.dll
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\bin\Debug\net6.0\ES_Database.pdb
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.vbproj.AssemblyReference.cache
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.AssemblyInfoInputs.cache
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.AssemblyInfo.vb
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.vbproj.CoreCompileInputs.cache
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.vbproj.CopyComplete
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.dll
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\refint\ES_Database.dll
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ES_Database.pdb
+C:\Users\jairs\Desktop\ES_Desktop\ES_Database\obj\Debug\net6.0\ref\ES_Database.dll

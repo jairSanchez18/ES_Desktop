@@ -26,7 +26,7 @@ Public Class SolicitudesClass
 
             'PROCEDEMOS A HACER EL INSERT EN LA TABLA DE SOLICITUDES'
 
-            sSql = "INSERT INTO solicitudes (id_profesor, id_inventario, equipo_solicitado , fecha_solicitud_pedido, estado_solicitud,  salon, cantidad) VALUES ( '" & id_profesor & "','" & id_inventario & "','" & cboequipo & "', NOW() , 'solicitado', '" & textsalon & "', '" & txtcantidad & "')"
+            sSql = "INSERT INTO solicitudes (id_profesor, id_inventario, equipo_solicitado , fecha_solicitud_pedido, estado_solicitud,  salon, cantidad) VALUES ( '" & id_profesor & "','" & id_inventario & "','" & cboequipo & "', NOW() , 'Solicitado', '" & textsalon & "', '" & txtcantidad & "')"
 
 
 

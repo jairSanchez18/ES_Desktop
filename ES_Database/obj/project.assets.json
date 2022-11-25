@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+      "projectUniqueName": "C:\\Users\\jairs\\Desktop\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
       "projectName": "ES_Database",
-      "projectPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
+      "projectPath": "C:\\Users\\jairs\\Desktop\\ES_Desktop\\ES_Database\\ES_Database.vbproj",
       "packagesPath": "C:\\Users\\jairs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jairs\\OneDrive\\Documentos\\Proyecto Final de DSVIII\\ES_Desktop\\ES_Database\\obj\\",
+      "outputPath": "C:\\Users\\jairs\\Desktop\\ES_Desktop\\ES_Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
